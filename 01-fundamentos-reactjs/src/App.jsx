@@ -1,12 +1,10 @@
-import styles from './App.module.css'
-import './global.css'
-
-import {
-    Post
-} from './Post'
-
-import { Sidebar } from './components/Sidebar'
 import { Header } from './components/Header'
+import { Post } from './components/Post'
+import { Sidebar } from './components/Sidebar'
+
+import styles from './App.module.css'
+
+import './global.css'
 
 export function App() {
     return (
@@ -16,15 +14,9 @@ export function App() {
             <div className={styles.wrapper}>
                 <Sidebar/>
                 <main>
-                    <Post
-                        author="Allan Moreira"
-                        content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo, nibh sit amet malesuada scelerisque, ipsum nibh vehicula augue, auctor rutrum erat diam vitae orci."
-                    />
+                    <Post />
 
-                    <Post
-                        author="Luiz Fellipe"
-                        content="Sem notebook não tem como trabalhar"
-                    />
+                    <Post />
                 </main>
             </div>
         </div>
